@@ -45,9 +45,8 @@ def main(modelname, mode, batch_size, train_ratio, epochs, lr, wd, seed, person_
         return test_acc
 
 if __name__ == "__main__":
-    modelname = "Wavelet1_ResCNN"#LSTM, BLSTM, GRU, CNN_GRU, Wavelet_LSTM, ShallowRNN, Wavelet_ShallowRNN, AttentionLSTM, Wavelet1_ResCNN, Wavelet2_ResCNN, Res_CNN
+    modelname = "Wavelet1_ResCNN"# Wavelet1_ResCNN, Wavelet2_ResCNN, Res_CNN
     mode = 'train_test'#train_test,only_test
-    # mode = 'only_test'#train_test,only_test
     batch_size = 64
     train_ratio = 0.8
     epochs = 500

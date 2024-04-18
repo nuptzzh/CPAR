@@ -153,24 +153,6 @@ def get_model(modelname, subcarrier_num, num_cls, data_type):
     if data_type == "amp":
         subcarrier_num = subcarrier_num
 
-    if modelname == "LSTM":
-        model = NTU_Fi_model.CSI_LSTM(subcarrier_num, num_cls)
-    if modelname == "BLSTM":
-        model = NTU_Fi_model.CSI_BiLSTM(subcarrier_num, num_cls)
-    if modelname == "GRU":
-        model = NTU_Fi_model.CSI_GRU(subcarrier_num, num_cls)
-    if modelname == "CNN_GRU":
-        model = NTU_Fi_model.CSI_CNN_GRU(subcarrier_num, num_cls)
-    if modelname == "Wavelet_LSTM":
-        model = NTU_Fi_model.Wavelet_LSTM(subcarrier_num, num_cls)
-    if modelname == "Wavelet_LSTMv2":
-        model = NTU_Fi_model.Wavelet_LSTMv2(subcarrier_num, num_cls)
-    if modelname == "ShallowRNN":
-        model = NTU_Fi_model.ShallowRNN(subcarrier_num, num_cls,'LSTM', [64, 64], [0.2, 0.2])
-    if modelname == "Wavelet_ShallowRNN":
-        model = NTU_Fi_model.Wavelet_ShallowRNN(subcarrier_num, num_cls)
-    if modelname == "AttentionLSTM":
-        model = NTU_Fi_model.AttentionLSTM(subcarrier_num, num_cls)
     if modelname == "Wavelet1_ResCNN":
         model = NTU_Fi_model.Wavelet1_ResCNN(subcarrier_num, num_cls)
     if modelname == "Wavelet2_ResCNN":
